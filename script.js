@@ -7,7 +7,7 @@ $('.search-button').on('click', function () {
             const movies = results.Search;
             let cards = '';
             movies.forEach(movie => {
-                cards += `<div class="col-md-4 mt-5 my-3">
+                cards += `<div class="col-md-4 mt-5 my-3 d-flex justify-content-around">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="${movie.Poster}" alt="${movie.Title}">
                     <div class="card-body">
