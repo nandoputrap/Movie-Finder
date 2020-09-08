@@ -25,25 +25,29 @@
     <!-- custom element app-bar yang berisi navigasi -->
     <app-bar></app-bar>
 
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col">
-                <h1>Movie Finder</h1>
-            </div>
-        </div>
 
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control keyword" placeholder="Search movie..."
-                        aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-success search-button" type="button">Search</button>
+    <div class="welcome container-fluid d-flex">
+        <div class="container d-flex justify-content-center flex-column">
+            <div class="row d-flex justify-content-center flex-column text-center">
+                <h1 class="my-3">Movie Finder</h1>
+                <h4 class="my-3 cari">Cari film favoritmu berdasarkan judulnya...</h4>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class=" col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control keyword" placeholder="Search movie..."
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-success search-button" type="button">Search</button>
+                        </div>
                     </div>
+                    <p class="text-muted"> contoh: Batman, Avengers, Home Alone</p>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container">
         <div class="row movie-list d-flex justify-content-around">
 
         </div>
@@ -71,7 +75,7 @@
     </div>
 
     <!-- Begin Footer -->
-    <footer class="page-footer font-small blue">
+    <footer class="page-footer font-small blue bg-dark">
         <div class="footer-copyright text-center py-3">© 2020 Nando Putra Pratama |
             <a href="https://dicoding.com/"> Dicoding Project</a>
         </div>

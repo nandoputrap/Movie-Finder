@@ -20,10 +20,11 @@ class StudentNote extends HTMLElement {
                         (tahap development).</li>
                     <li class="list-group-item">Memanfaatkan API dengan konsep AJAX untuk mendapatkan data film dari
                         situs OMDB.</li>
-                    <li class="list-group-item">Memanfaatkan jQuery (AJAX) dan Bootstrap (responsif).</li>
+                    <li class="list-group-item">Memanfaatkan jQuery (AJAX) dan Bootstrap (responsif), namun masih menerapkan CDN (masih gagal ketika konfigurasi menggunakan webpack).</li>
                     <li class="list-group-item">Proyek dikerjakan selama ± 1 bulan karena butuh pemahaman mendalam
                         mengenai materi-materi pada kelas fundamental front-end web development.</li>
-                    <li class="list-group-item">Terima kasih atas ilmunya, sangat bermanfaat. Semoga dicoding sukses
+                    <li class="list-group-item">Karena keterbatasan waktu, fitur yang disediakan masih sangat sederhana, yaitu baru bisa mencari film berdasarkan judul. Ke depannya akan saya coba kembangkan fitur lainnya seperti mencari berdasarkan aktor, genre, director, dan lain-lain.</li>    
+                    <li class="list-group-item">Terima kasih atas ilmunya yang sangat bermanfaat. Semoga dicoding sukses
                         selalu :)</li>
                 </ul>
             </div>

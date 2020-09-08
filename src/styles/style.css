@@ -1,5 +1,6 @@
 * {
-    border: solid 1px red;
+    /* border: solid 1px red; */
+    box-sizing: border-box;
 }
 
 h1,
@@ -17,16 +18,60 @@ app-bar {
     display: block;
 }
 
+h1 {
+    color: greenyellow;
+    font-size: 60px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    color: greenyellow;
+}
+
+.btn {
+    background-color: greenyellow;
+    border: none;
+    color: rgba(0, 0, 0, 0.726);
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: greenyellow;
+    border: none;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.contoh {
+    color: white;
+}
+
 .navbar,
-.card {
+.card,
+.input-group {
     border: none;
     box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
 }
 
+.welcome {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url("https://meghanmblogs.files.wordpress.com/2015/03/pvr-disney-fest-collage.jpg");
+    height: 550px;
+}
 
-/* .movie-list {
-    display: flex;
-    /* align-items: center;
-    justify-content: center;
-    flex-direction: row;
-} */
+.cari {
+    color: white;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    color: white;
+
+}
+
+footer a {
+    color: greenyellow;
+}
