@@ -1,11 +1,13 @@
-// ajax menggunakan jquery
-$.ajax({
-    url: 'https://www.omdbapi.com/?s=batman&apikey=6d6b6c08',
-    success: results => {
-        const movies = results.Search;
-        let cards = '';
-        movies.forEach(movie => {
-            cards += `<div class="col-md-4 mt-5 my-3">
+// menampilkan movie list berdasarkan keyword
+$('.search-button').on('click', function () {
+    // ajax menggunakan jquery
+    $.ajax({
+        url: 'https://www.omdbapi.com/?apikey=6d6b6c08&s=' + $('.keyword').val(),
+        success: results => {
+            const movies = results.Search;
+            let cards = '';
+            movies.forEach(movie => {
+                cards += `<div class="col-md-4 mt-5 my-3">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="${movie.Poster}" alt="${movie.Title}">
                     <div class="card-body">
@@ -15,17 +17,17 @@ $.ajax({
                     </div>
                 </div>
             </div>`
-        });
+            });
 
-        $('.movie-list').html(cards);
+            $('.movie-list').html(cards);
 
-        // tombol detail diklik maka akan mengarahkan ke id masing-masing
-        $('.movie-detail').on('click', function () {
-            // console.log($(this).data('imdbid'));
-            $.ajax({
-                url: 'https://www.omdbapi.com/?apikey=6d6b6c08&i=' + $(this).data('imdbid'),
-                success: movie => {
-                    const movieDetail = `
+            // tombol detail diklik maka akan mengarahkan ke id masing-masing
+            $('.movie-detail').on('click', function () {
+                // console.log($(this).data('imdbid'));
+                $.ajax({
+                    url: 'https://www.omdbapi.com/?apikey=6d6b6c08&i=' + $(this).data('imdbid'),
+                    success: movie => {
+                        const movieDetail = `
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-4">
@@ -49,13 +51,14 @@ $.ajax({
                             </div>
                         </div>
                     </div>`
-                    $('.modal-body').html(movieDetail);
-                }
+                        $('.modal-body').html(movieDetail);
+                    }
+                });
             });
-        });
-        console.log(movies);
-    },
-    error: e => {
-        console.log(e.responseText);
-    }
+            console.log(movies);
+        },
+        error: e => {
+            console.log(e.responseText);
+        }
+    });
 });
