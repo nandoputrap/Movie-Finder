@@ -10,7 +10,7 @@ class StudentNote extends HTMLElement {
             <div class="col">
                 <h1>Student Note</h1>
                 <br />
-                <h4>Berikut merupakan catatan dalam pengembangan proyek ini:</h4>
+                <h4 class="my-5">Berikut merupakan catatan dalam pengembangan proyek ini:</h4>
                 <ul class="list-group">
                     <li class="list-group-item">Penulisan kode pada proyek submission ini sudah menerapkan standar ES6
                         sintaks pada beberapa file .js</li>

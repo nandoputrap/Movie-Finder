@@ -30,7 +30,7 @@ $('.search-button').on('click', function () {
                         const movieDetail = `
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 text-center my-5">
                                 <img src="${movie.Poster}" alt="${movie.Title}" class="img-fluid">
                             </div>
                             <div class="col-md">
