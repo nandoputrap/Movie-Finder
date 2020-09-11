@@ -1,5 +1,5 @@
 # Movie-Finder
-Aplikasi pencarian film dengan memanfaatkan OMDB-API.
+Aplikasi pencarian film dengan memanfaatkan OMDB-API. Aplikasi ini merupakan submission akhir untuk kelas Dicoding (Fundamental Front-End Web Development). 
 
 Proyek front-end development ini memiliki kriteria berikut:
 
