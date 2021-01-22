@@ -13,7 +13,7 @@ $('.search-button').on('click', function () {
                     <div class="card-body">
                         <h5 class="card-title mt-3">${movie.Title}</h5>
                         <h6 class="card-subtitle mt-3">${movie.Year}</h5>
-                            <a href="#" class="btn btn-primary mt-3 movie-detail" data-toggle="modal" data-target="#movieModal" data-imdbid="${movie.imdbID}">Detail</a>
+                            <a href="#movieModal" class="btn btn-primary mt-3 movie-detail" data-toggle="modal" data-target="#movieModal" data-imdbid="${movie.imdbID}">Detail</a>
                     </div>
                 </div>
             </div>`
